@@ -1,6 +1,6 @@
 # LLM Fundamentals
 
-A hands-on, five-phase course that builds intuition for how large language models work — from the attention mechanism all the way to a retrieval-augmented question-answering pipeline. Each notebook motivates a concept by showing where the *previous* approach falls short, then implements the fix in runnable code.
+A hands-on course that builds intuition for how large language models work — from NumPy fundamentals all the way to a retrieval-augmented question-answering pipeline. It starts with four Python prerequisite notebooks covering NumPy, Matplotlib, and PyTorch, then moves through five AI phases. Each notebook motivates a concept by showing where the *previous* approach falls short, then implements the fix in runnable code.
 
 Everything is designed to run on a laptop (CPU or Apple Silicon / MPS). The notebooks build toward a capstone: an **AI Customer Support assistant** that summarizes tickets and answers questions grounded in a knowledge base.
 
