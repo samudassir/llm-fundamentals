@@ -88,4 +88,4 @@ llm-fundamentals/
 
 ## License
 
-Add a license of your choice (e.g. MIT) if you intend others to reuse this material.
+This course is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — you are free to use, adapt, and share it with attribution.
