@@ -86,6 +86,10 @@ llm-fundamentals/
 └── outputs/          # fine-tuning checkpoints (created at runtime, git-ignored)
 ```
 
+## Interactive version
+
+Interactive version with cloud kernel and AI tutor at [startaifun.com](https://startaifun.com)
+
 ## License
 
 This course is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — you are free to use, adapt, and share it with attribution.
