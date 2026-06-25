@@ -4,6 +4,17 @@ A hands-on, five-phase course that builds intuition for how large language model
 
 Everything is designed to run on a laptop (CPU or Apple Silicon / MPS). The notebooks build toward a capstone: an **AI Customer Support assistant** that summarizes tickets and answers questions grounded in a knowledge base.
 
+## Python prerequisites (start here if you're new to AI tooling)
+
+Four short notebooks that build the numerical and framework foundations every AI phase relies on. If you're already comfortable with NumPy, Matplotlib, and PyTorch you can skip straight to Phase 1.
+
+| # | Notebook | What you'll learn |
+|---|----------|-------------------|
+| PY 01 | `notebooks/py01_numpy.ipynb` | Why AI uses arrays instead of lists, shapes and dimensions, vectorized operations, broadcasting, matrix multiplication, softmax, and cosine similarity. |
+| PY 02 | `notebooks/py02_matplotlib.ipynb` | Plotting training loss curves, token frequency bar charts, weight-distribution histograms, attention heatmaps, and 2D embedding scatter plots. |
+| PY 03 | `notebooks/py03_pytorch.ipynb` | PyTorch tensors, automatic differentiation (autograd), building models with `nn.Module`, and the forward → loss → backward → update training loop. |
+| PY 04 | `notebooks/py04_before_you_start_ai.ipynb` | Tool overview (PyTorch, HuggingFace Transformers & Datasets, ChromaDB), a one-sentence glossary of AI terms, and an optional reading list of key papers. |
+
 ## The five phases
 
 | # | Notebook | What you'll learn |
@@ -15,7 +26,7 @@ Everything is designed to run on a laptop (CPU or Apple Silicon / MPS). The note
 | 4 | `notebooks/04_fine_tuning.ipynb` | Adapting a model to a task: full fine-tuning vs. LoRA/PEFT, catastrophic forgetting, and the parameter/speed trade-offs. |
 | 5 | `notebooks/05_rag.ipynb` | Retrieval-Augmented Generation: embeddings → vector database (ChromaDB) → retrieval → grounded generation, plus chunking and failure modes. |
 
-Work through them in order — each phase assumes the one before it. Every notebook ends with `YOUR UNDERSTANDING` reflection prompts; filling these in is the point.
+Work through the prerequisites first, then the five phases in order — each phase assumes the one before it. Every notebook ends with `YOUR UNDERSTANDING` reflection prompts; filling these in is the point.
 
 ## Setup
 
@@ -57,7 +68,19 @@ The notebooks load `../.env` relative to the `notebooks/` folder, so keep `.env`
 
 ```
 llm-fundamentals/
-├── notebooks/        # the five-phase course (run in order)
+├── notebooks/
+│   ├── py01_numpy.ipynb             # prerequisite: NumPy
+│   ├── py02_matplotlib.ipynb        # prerequisite: Matplotlib
+│   ├── py03_pytorch.ipynb           # prerequisite: PyTorch
+│   ├── py04_before_you_start_ai.ipynb  # prerequisite: tools & glossary
+│   ├── 01_foundations.ipynb         # phase 1: RNNs → Transformers
+│   ├── 01b_tokenizers_embeddings.ipynb # phase 1b: tokenization & embeddings
+│   ├── 02_text_generation.ipynb     # phase 2: decoding strategies
+│   ├── 03_prompt_engineering.ipynb  # phase 3: prompt engineering
+│   ├── 04_fine_tuning.ipynb         # phase 4: fine-tuning & LoRA
+│   └── 05_rag.ipynb                 # phase 5: RAG pipeline
+├── data/             # datasets used by the notebooks
+├── binder/           # Binder environment configuration
 ├── requirements.txt  # pinned dependencies
 ├── .env.example      # template for your OpenAI key (optional)
 └── outputs/          # fine-tuning checkpoints (created at runtime, git-ignored)
